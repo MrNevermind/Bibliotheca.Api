@@ -66,7 +66,8 @@ namespace Bibliotheca.Core
             table.Author = book.Author;
             table.Title = book.Title;
             table.Status = book.Status;
-            table.Cover = book.Cover;
+            if(book.Cover != null)
+                table.Cover = book.Cover;
         }
         #endregion
     }
